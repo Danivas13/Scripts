@@ -31,6 +31,7 @@ public class Functions {
         int numEliminado = 0;
         List<String> lista = new ArrayList<>();
         String linea = "";
+        String lineaAux = "";
 
 
         File doc = new File(ruta+archivo);
@@ -39,8 +40,19 @@ public class Functions {
 
             while (obj.hasNextLine()){
                 linea = obj.nextLine();
-                if (!linea.contains(var)){
+                if (linea.indexOf(var+" ") == -1){
+                    lineaAux = obj.hasNextLine()?obj.nextLine():"";
+
+                    if (lineaAux.indexOf(var+" ")!=-1 && !lineaAux.contains(",")){
+                        linea = linea.split(",")[0];
+                    }
                     lista.add(linea);
+                    if (!lineaAux.contains(var+" ")){
+                        lista.add(lineaAux);
+                    }
+
+                } else if (linea.contains("declare")){
+                    lista.add("declare");
                 }
             }
             reescribirArchivo(lista, archivo, ruta);
@@ -52,6 +64,7 @@ public class Functions {
 
         return  0;
     }
+
 
 
 
