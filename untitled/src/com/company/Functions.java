@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Functions {
 
-    private void reescribirArchivo(List<String> lista, String archivo, String ruta){
+    private static void reescribirArchivo(List<String> lista, String archivo, String ruta){
 
         String root = ruta+archivo;
         File f = new File(root);
@@ -27,7 +27,7 @@ public class Functions {
 
     }
 
-    public void eliminarVariable(String var, String ruta, String archivo){
+    public static int eliminarVariable(String var, String ruta, String archivo){
         int numEliminado = 0;
         List<String> lista = new ArrayList<>();
         String linea = "";
@@ -50,7 +50,7 @@ public class Functions {
             e.printStackTrace();
         }
 
-
+        return  0;
     }
 
 

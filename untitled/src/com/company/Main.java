@@ -1,5 +1,7 @@
 package com.company;
 
+import javafx.scene.shape.Arc;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -38,15 +40,20 @@ public class Main {
             if(!Cambiar_Archivo){
                 //Eliminamos la variable
                 System.out.println(linea);
-                // Abrimos el archivo
 
-                // buscamos la linea de la variable
+                try {
+                    if(Functions.eliminarVariable(linea,carpetaSps,Archivo_Actual) == 0){
+                        //Exito
+                        System.out.println("Archivo: "+ Archivo_Actual + " Variable eliminada: " + linea);
+                    }else{
+                        // Errores
+                        System.out.println("Error desconocido: "+ Archivo_Actual + " Variable eliminada: " + linea);
+                    }
+                }catch (Exception e){
+                    System.out.println("Error " + e.toString());
+                }
 
-                // eliminamos la variable
 
-                // Verificamos el asunto de las comas
-
-                // cerramos seguimos
             }
         }
 
