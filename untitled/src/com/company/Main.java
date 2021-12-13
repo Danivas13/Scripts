@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         String txt = "src/com/company/variables.txt";
-        String carpetaSps = "";
+        String carpetaSps = "C:\\Users\\dgallardo\\PRUEBAS_UNITARIAS\\Azure\\cobis-con-backend\\spsql\\";
         System.out.println("A");
 
         InputStream ins = null;
@@ -39,7 +39,7 @@ public class Main {
             }
             if(!Cambiar_Archivo){
                 //Eliminamos la variable
-                System.out.println(linea);
+               // System.out.println(linea);
 
                 try {
                     if(Functions.eliminarVariable(linea,carpetaSps,Archivo_Actual) == 0){
