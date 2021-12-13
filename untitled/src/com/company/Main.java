@@ -13,6 +13,7 @@ public class Main {
         String txt = "src/com/company/variables.txt";
         String carpetaSps = "";
         System.out.println("A");
+
         InputStream ins = null;
         try {
             ins = new FileInputStream(txt);
@@ -48,6 +49,7 @@ public class Main {
                 // cerramos seguimos
             }
         }
+
 
     }
 }
