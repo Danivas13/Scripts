@@ -40,10 +40,10 @@ public class Functions {
 
             while (obj.hasNextLine()){
                 linea = obj.nextLine();
-                if (linea.indexOf(var+" ") == -1){
+                if (!linea.contains(var + " ")){
                     lineaAux = obj.hasNextLine()?obj.nextLine():"";
 
-                    if (lineaAux.indexOf(var+" ")!=-1 && !lineaAux.contains(",")){
+                    if (lineaAux.contains(var + " ") && !lineaAux.contains(",")){
                         linea = linea.split(",")[0];
                     }
                     lista.add(linea);

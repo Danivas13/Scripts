@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/src/com/company/Functions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/company/Main2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-frontend/cnmng.conmanagement.customevents.impl/src/test/java/com/cobiscorp/cobis/cnmng/customevents/impl/form/executecommand/Command1_CM_FREPORTE_6EMTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-frontend/cobis-web-cnmng-services/src/test/java/com/cobiscorp/ecobis/cnmng/web/impl/BalancePerAccountServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
