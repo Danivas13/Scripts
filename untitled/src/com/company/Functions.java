@@ -7,12 +7,10 @@ import java.util.Scanner;
 
 public class Functions {
 
-    private static void reescribirArchivo(List<String> lista, String archivo, String ruta){
+    private static void reescribirArchivo(List<String> lista, File file){
 
-        String root = ruta+archivo;
-        File f = new File(root);
         try{
-            FileWriter fw = new FileWriter(f);
+            FileWriter fw = new FileWriter(file);
             BufferedWriter escritura = new BufferedWriter(fw);
             for (String linea:lista) {
                 escritura.write(linea);
@@ -55,7 +53,7 @@ public class Functions {
                     lista.add("declare");
                 }
             }
-            reescribirArchivo(lista, archivo, ruta);
+            reescribirArchivo(lista, doc);
 
 
         } catch (FileNotFoundException e) {
@@ -65,6 +63,91 @@ public class Functions {
         return  0;
     }
 
+
+    public static void asignarVariables(File doc){
+
+        List<String> lista = new ArrayList<>();
+        List<String> lstParameters = new ArrayList<>();
+        List<String> lstParametersFormat = new ArrayList<>();
+        List<String> lstFinal = new ArrayList<>();
+
+        String linea = "";
+
+        try {
+            Scanner obj = new Scanner(doc);
+
+            while (obj.hasNextLine()){
+                linea = obj.nextLine();
+
+                lista.add(linea);
+
+            }
+
+            lstParameters = Utils.getParametersToAssign(lista);
+            lstParametersFormat = Functions.prettyFormaterParameter(lstParameters);
+            lstFinal = getFinalRefactorCodeSmells(lista, lstParametersFormat);
+
+            reescribirArchivo(lstFinal, doc);
+
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    private static List<String> getFinalRefactorCodeSmells(List<String> lstOriginal, List<String> lstParameters){
+        List<String> lista = new ArrayList<>();
+        String aux = "";
+        for(String linea : lstOriginal){
+
+            lista.add(linea);
+            try{
+                aux = Utils.eliminarEspacios(linea).get(0);
+
+                if (aux.equals("as")){
+                    lista.add("\n");
+                    for (String cadena : lstParameters){
+                        lista.add(cadena);
+                    }
+                    lista.add("\n");
+                }
+            } catch (IndexOutOfBoundsException e){
+                e.printStackTrace();
+            }
+        }
+
+        return lista;
+
+    }
+
+
+    public static List<String> prettyFormaterParameter(List<String> lista){
+        int maxLongitud = Utils.getLongitudMayor(lista);
+        List<String> listNueva = new ArrayList<>();
+        String aux = null;
+        int cont = 0;
+
+        listNueva.add("select");
+        for (String cadena : lista) {
+
+            aux = cont < lista.size()-1 ?cadena+",":cadena;
+
+            if (cadena.length() < maxLongitud){
+                for (int i =cadena.length(); i < maxLongitud; i++){
+                    cadena += " ";
+                }
+
+            }
+            cadena += " = "+aux;
+            listNueva.add(cadena);
+            cont++;
+        }
+
+        return listNueva;
+
+    }
 
 
 
