@@ -24,12 +24,11 @@ public class Main2 {
 
 
 
- 
     public void test(){
         List<String> lista = new ArrayList<>();
         String linea = "";
         String ruta = "C:\\Users\\dgallardo\\PRUEBAS_UNITARIAS\\Azure\\cobis-con-backend\\spsql\\";
-        String archivo = "ing_opera_det.sp";
+        String archivo = "ing_opera.sp";
 
 
         File doc = new File(ruta+archivo);

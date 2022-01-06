@@ -84,7 +84,9 @@ public class Functions {
             }
 
             lstParameters = Utils.getParametersToAssign(lista);
-            lstParametersFormat = Functions.prettyFormaterParameter(lstParameters);
+            if(!lstParameters.isEmpty()){
+                lstParametersFormat = Functions.prettyFormaterParameter(lstParameters);
+            }
             lstFinal = getFinalRefactorCodeSmells(lista, lstParametersFormat);
 
             reescribirArchivo(lstFinal, doc);
