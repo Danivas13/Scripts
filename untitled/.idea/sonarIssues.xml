@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/src/com/company/Functions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/company/Main2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/company/Utils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/main/java/com/cobiscorp/businesslogic/accounting/BL_consulta_cuenta_perfil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/main/java/com/cobiscorp/businesslogic/accounting/BL_mant_inf_depart.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/test/java/com/cobiscorp/businesslogic/accounting/BL_CobProductoTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/test/java/com/cobiscorp/businesslogic/accounting/BL_CodvalorTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/test/java/com/cobiscorp/businesslogic/accounting/BL_ConsultaCuentaPerfilTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/test/java/com/cobiscorp/businesslogic/accounting/BL_CotizacionTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/test/java/com/cobiscorp/businesslogic/accounting/BL_MantInfDepartTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/test/java/com/cobiscorp/businesslogic/accounting/BL_ParametroTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/test/java/com/cobiscorp/businesslogic/accounting/BL_PeriodoTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-backend/test/cobis-con-backend/src/test/java/com/cobiscorp/businesslogic/accounting/BL_RelofiTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-frontend/cnmng.conmanagement.customevents.impl/src/test/java/com/cobiscorp/cobis/cnmng/customevents/impl/form/executecommand/Command1_CM_FREPORTE_6EMTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PRUEBAS_UNITARIAS/Azure/cobis-con-frontend/cobis-web-cnmng-services/src/test/java/com/cobiscorp/ecobis/cnmng/web/impl/BalancePerAccountServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
